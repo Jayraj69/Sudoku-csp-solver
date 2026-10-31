@@ -1,7 +1,4 @@
 # Sudoku Solver Using Constraint Satisfaction
-**ECSCT24301 - Foundation of AI | Adani University, FEST, CSE (AI-ML) | Applied AI Project Track**
-Team: Jayraj Chauhan (2410111015), Om Patel (2410111112), Parth Prajapati (2410111138) - Supervisor: Ms. Alpa Rupala - 2026-27
-
 Sudoku is modelled as a CSP (81 variables, domains in 1..9, 27 all-different units). Five solvers are
 implemented and compared with identical instrumentation:
 
