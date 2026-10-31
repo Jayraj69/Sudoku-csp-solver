@@ -1,0 +1,86 @@
+Norvig grid1 (easy, 30 givens)
+Algorithm: MAC
+
+Initial puzzle:
++-------+-------+-------+
+| . . 3 | . 2 . | 6 . . |
+| 9 . . | 3 . 5 | . . 1 |
+| . . 1 | 8 . 6 | 4 . . |
++-------+-------+-------+
+| . . 8 | 1 . 2 | 9 . . |
+| 7 . . | . . . | . . 8 |
+| . . 6 | 7 . 8 | 2 . . |
++-------+-------+-------+
+| . . 2 | 6 . 9 | 5 . . |
+| 8 . . | 2 . 3 | . . 9 |
+| . . 5 | . 1 . | 3 . . |
++-------+-------+-------+
+
+Decision sequence:
+[pre ] AC-3 pre-processing done; total remaining candidates = 81
+[    1] ASSIGN    R5C2 = 2  (chosen from 1 candidate)
+[    2] ASSIGN    R1C8 = 5  (chosen from 1 candidate)
+[    3] ASSIGN    R5C8 = 3  (chosen from 1 candidate)
+[    4] ASSIGN    R9C2 = 9  (chosen from 1 candidate)
+[    5] ASSIGN    R1C1 = 4  (chosen from 1 candidate)
+[    6] ASSIGN    R2C5 = 4  (chosen from 1 candidate)
+[    7] ASSIGN    R3C8 = 9  (chosen from 1 candidate)
+[    8] ASSIGN    R4C2 = 4  (chosen from 1 candidate)
+[    9] ASSIGN    R7C9 = 4  (chosen from 1 candidate)
+[   10] ASSIGN    R6C2 = 3  (chosen from 1 candidate)
+[   11] ASSIGN    R8C5 = 5  (chosen from 1 candidate)
+[   12] ASSIGN    R9C1 = 6  (chosen from 1 candidate)
+[   13] ASSIGN    R2C8 = 2  (chosen from 1 candidate)
+[   14] ASSIGN    R5C7 = 1  (chosen from 1 candidate)
+[   15] ASSIGN    R9C9 = 2  (chosen from 1 candidate)
+[   16] ASSIGN    R1C2 = 8  (chosen from 1 candidate)
+[   17] ASSIGN    R3C5 = 7  (chosen from 1 candidate)
+[   18] ASSIGN    R4C5 = 3  (chosen from 1 candidate)
+[   19] ASSIGN    R6C8 = 4  (chosen from 1 candidate)
+[   20] ASSIGN    R7C1 = 3  (chosen from 1 candidate)
+[   21] ASSIGN    R5C3 = 9  (chosen from 1 candidate)
+[   22] ASSIGN    R1C9 = 7  (chosen from 1 candidate)
+[   23] ASSIGN    R2C2 = 6  (chosen from 1 candidate)
+[   24] ASSIGN    R4C8 = 7  (chosen from 1 candidate)
+[   25] ASSIGN    R6C5 = 9  (chosen from 1 candidate)
+[   26] ASSIGN    R8C7 = 7  (chosen from 1 candidate)
+[   27] ASSIGN    R3C1 = 2  (chosen from 1 candidate)
+[   28] ASSIGN    R7C2 = 7  (chosen from 1 candidate)
+[   29] ASSIGN    R9C4 = 4  (chosen from 1 candidate)
+[   30] ASSIGN    R3C9 = 3  (chosen from 1 candidate)
+[   31] ASSIGN    R5C6 = 4  (chosen from 1 candidate)
+[   32] ASSIGN    R8C8 = 6  (chosen from 1 candidate)
+[   33] ASSIGN    R2C3 = 7  (chosen from 1 candidate)
+[   34] ASSIGN    R7C5 = 8  (chosen from 1 candidate)
+[   35] ASSIGN    R1C4 = 9  (chosen from 1 candidate)
+[   36] ASSIGN    R4C1 = 5  (chosen from 1 candidate)
+[   37] ASSIGN    R6C9 = 5  (chosen from 1 candidate)
+[   38] ASSIGN    R8C2 = 1  (chosen from 1 candidate)
+[   39] ASSIGN    R9C6 = 7  (chosen from 1 candidate)
+[   40] ASSIGN    R5C4 = 5  (chosen from 1 candidate)
+[   41] ASSIGN    R7C8 = 1  (chosen from 1 candidate)
+[   42] ASSIGN    R1C6 = 1  (chosen from 1 candidate)
+[   43] ASSIGN    R2C7 = 8  (chosen from 1 candidate)
+[   44] ASSIGN    R3C2 = 5  (chosen from 1 candidate)
+[   45] ASSIGN    R4C9 = 6  (chosen from 1 candidate)
+[   46] ASSIGN    R5C5 = 6  (chosen from 1 candidate)
+[   47] ASSIGN    R6C1 = 1  (chosen from 1 candidate)
+[   48] ASSIGN    R8C3 = 4  (chosen from 1 candidate)
+[   49] ASSIGN    R9C8 = 8  (chosen from 1 candidate)
+
+Solution:
++-------+-------+-------+
+| 4 8 3 | 9 2 1 | 6 5 7 |
+| 9 6 7 | 3 4 5 | 8 2 1 |
+| 2 5 1 | 8 7 6 | 4 9 3 |
++-------+-------+-------+
+| 5 4 8 | 1 3 2 | 9 7 6 |
+| 7 2 9 | 5 6 4 | 1 3 8 |
+| 1 3 6 | 7 9 8 | 2 4 5 |
++-------+-------+-------+
+| 3 7 2 | 6 8 9 | 5 1 4 |
+| 8 1 4 | 2 5 3 | 7 6 9 |
+| 6 9 5 | 4 1 7 | 3 8 2 |
++-------+-------+-------+
+
+Status=solved nodes=49 expanded=49 backtracks=0 checks=10677 prunes=392 max_depth=48 time=0.0026s

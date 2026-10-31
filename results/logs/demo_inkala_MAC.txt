@@ -1,0 +1,156 @@
+Inkala 2012 'hardest' puzzle (21 givens)
+Algorithm: MAC
+
+Initial puzzle:
++-------+-------+-------+
+| 8 . . | . . . | . . . |
+| . . 3 | 6 . . | . . . |
+| . 7 . | . 9 . | 2 . . |
++-------+-------+-------+
+| . 5 . | . . 7 | . . . |
+| . . . | . 4 5 | 7 . . |
+| . . . | 1 . . | . 3 . |
++-------+-------+-------+
+| . . 1 | . . . | . 6 8 |
+| . . 8 | 5 . . | . 1 . |
+| . 9 . | . . . | 4 . . |
++-------+-------+-------+
+
+Decision sequence (first 120 events):
+[pre ] AC-3 pre-processing done; total remaining candidates = 275
+[    1] ASSIGN    R8C7 = 3  (chosen from 2 candidates, pruned 8 values)
+[    2] ASSIGN    R7C7 = 5  (chosen from 2 candidates, pruned 6 values)
+[    3] ASSIGN    R9C9 = 2  (chosen from 2 candidates, pruned 23 values)
+[    4] ASSIGN    R8C9 = 9  (chosen from 1 candidate)
+[    5] ASSIGN    R9C8 = 7  (chosen from 1 candidate)
+[    6] ASSIGN    R5C9 = 1  (chosen from 2 candidates, pruned 7 values)
+[    7] ASSIGN    R9C3 = 5  (chosen from 2 candidates, pruned 3 values)
+[    8] ASSIGN    R3C3 = 4  (chosen from 2 candidates, pruned 11 values)
+[    9] ASSIGN    R2C2 = 1  (chosen from 2 candidates, pruned 6 values)
+[   10] ASSIGN    R1C2 = 2  (chosen from 2 candidates, pruned 9 values)
+[   11] ASSIGN    R2C1 = 5  (chosen from 2 candidates, pruned 72 values)
+[   12] BACKTRACK R2C1 = 5  (undo, try next value)
+[   13] ASSIGN    R2C1 = 9  (chosen from 2 candidates, pruned 19 values)
+[   14] BACKTRACK R2C1 = 9  (undo, try next value)
+[   15] BACKTRACK R1C2 = 2  (undo, try next value)
+[   16] ASSIGN    R1C2 = 6  (chosen from 2 candidates, pruned 60 values)
+[   17] ASSIGN    R1C7 = 1  (chosen from 1 candidate)
+[   18] ASSIGN    R2C1 = 2  (chosen from 1 candidate)
+[   19] ASSIGN    R3C4 = 3  (chosen from 1 candidate)
+[   20] ASSIGN    R6C9 = 5  (chosen from 1 candidate)
+[   21] ASSIGN    R3C6 = 1  (chosen from 1 candidate)
+[   22] ASSIGN    R1C9 = 3  (chosen from 1 candidate)
+[   23] ASSIGN    R9C4 = 8  (chosen from 1 candidate)
+[   24] ASSIGN    R4C9 = 4  (chosen from 1 candidate)
+[   25] ASSIGN    R2C7 = 9  (chosen from 1 candidate)
+[   26] ASSIGN    R3C1 = 5  (chosen from 1 candidate)
+[   27] ASSIGN    R1C3 = 9  (chosen from 1 candidate)
+[   28] ASSIGN    R2C9 = 7  (chosen from 1 candidate)
+[   29] ASSIGN    R3C8 = 8  (chosen from 1 candidate)
+[   30] ASSIGN    R3C9 = 6  (chosen from 1 candidate)
+[   31] ASSIGN    R4C3 = 2  (chosen from 2 candidates, pruned 9 values)
+[   32] BACKTRACK R4C3 = 2  (undo, try next value)
+[   33] ASSIGN    R4C3 = 6  (chosen from 2 candidates, pruned 20 values)
+[   34] BACKTRACK R4C3 = 6  (undo, try next value)
+[   35] BACKTRACK R3C9 = 6  (undo, try next value)
+[   36] BACKTRACK R3C8 = 8  (undo, try next value)
+[   37] BACKTRACK R2C9 = 7  (undo, try next value)
+[   38] BACKTRACK R1C3 = 9  (undo, try next value)
+[   39] BACKTRACK R3C1 = 5  (undo, try next value)
+[   40] BACKTRACK R2C7 = 9  (undo, try next value)
+[   41] BACKTRACK R4C9 = 4  (undo, try next value)
+[   42] BACKTRACK R9C4 = 8  (undo, try next value)
+[   43] BACKTRACK R1C9 = 3  (undo, try next value)
+[   44] BACKTRACK R3C6 = 1  (undo, try next value)
+[   45] BACKTRACK R6C9 = 5  (undo, try next value)
+[   46] BACKTRACK R3C4 = 3  (undo, try next value)
+[   47] BACKTRACK R2C1 = 2  (undo, try next value)
+[   48] BACKTRACK R1C7 = 1  (undo, try next value)
+[   49] BACKTRACK R1C2 = 6  (undo, try next value)
+[   50] BACKTRACK R2C2 = 1  (undo, try next value)
+[   51] ASSIGN    R2C2 = 2  (chosen from 2 candidates, pruned 9 values)
+[   52] ASSIGN    R1C2 = 1  (chosen from 2 candidates, pruned 5 values)
+[   53] ASSIGN    R1C7 = 6  (chosen from 2 candidates, pruned 82 values)
+[   54] BACKTRACK R1C7 = 6  (undo, try next value)
+[   55] ASSIGN    R1C7 = 9  (chosen from 2 candidates, pruned 50 values)
+[   56] ASSIGN    R2C1 = 9  (chosen from 1 candidate)
+[   57] ASSIGN    R3C4 = 3  (chosen from 1 candidate)
+[   58] ASSIGN    R6C9 = 5  (chosen from 1 candidate)
+[   59] ASSIGN    R3C6 = 1  (chosen from 1 candidate)
+[   60] ASSIGN    R1C9 = 3  (chosen from 1 candidate)
+[   61] ASSIGN    R9C4 = 8  (chosen from 1 candidate)
+[   62] ASSIGN    R4C9 = 4  (chosen from 1 candidate)
+[   63] ASSIGN    R2C7 = 1  (chosen from 1 candidate)
+[   64] ASSIGN    R3C1 = 5  (chosen from 1 candidate)
+[   65] ASSIGN    R1C3 = 6  (chosen from 1 candidate)
+[   66] ASSIGN    R2C9 = 7  (chosen from 1 candidate)
+[   67] ASSIGN    R3C8 = 8  (chosen from 1 candidate)
+[   68] ASSIGN    R3C9 = 6  (chosen from 1 candidate)
+[   69] ASSIGN    R4C3 = 2  (chosen from 2 candidates, pruned 9 values)
+[   70] BACKTRACK R4C3 = 2  (undo, try next value)
+[   71] ASSIGN    R4C3 = 9  (chosen from 2 candidates, pruned 8 values)
+[   72] BACKTRACK R4C3 = 9  (undo, try next value)
+[   73] BACKTRACK R3C9 = 6  (undo, try next value)
+[   74] BACKTRACK R3C8 = 8  (undo, try next value)
+[   75] BACKTRACK R2C9 = 7  (undo, try next value)
+[   76] BACKTRACK R1C3 = 6  (undo, try next value)
+[   77] BACKTRACK R3C1 = 5  (undo, try next value)
+[   78] BACKTRACK R2C7 = 1  (undo, try next value)
+[   79] BACKTRACK R4C9 = 4  (undo, try next value)
+[   80] BACKTRACK R9C4 = 8  (undo, try next value)
+[   81] BACKTRACK R1C9 = 3  (undo, try next value)
+[   82] BACKTRACK R3C6 = 1  (undo, try next value)
+[   83] BACKTRACK R6C9 = 5  (undo, try next value)
+[   84] BACKTRACK R3C4 = 3  (undo, try next value)
+[   85] BACKTRACK R2C1 = 9  (undo, try next value)
+[   86] BACKTRACK R1C7 = 9  (undo, try next value)
+[   87] BACKTRACK R1C2 = 1  (undo, try next value)
+[   88] ASSIGN    R1C2 = 6  (chosen from 2 candidates, pruned 26 values)
+[   89] BACKTRACK R1C2 = 6  (undo, try next value)
+[   90] BACKTRACK R2C2 = 2  (undo, try next value)
+[   91] BACKTRACK R3C3 = 4  (undo, try next value)
+[   92] ASSIGN    R3C3 = 6  (chosen from 2 candidates, pruned 7 values)
+[   93] ASSIGN    R4C9 = 4  (chosen from 2 candidates, pruned 7 values)
+[   94] ASSIGN    R2C9 = 5  (chosen from 2 candidates, pruned 20 values)
+[   95] ASSIGN    R1C9 = 7  (chosen from 1 candidate)
+[   96] ASSIGN    R6C9 = 6  (chosen from 1 candidate)
+[   97] ASSIGN    R3C9 = 3  (chosen from 1 candidate)
+[   98] ASSIGN    R6C5 = 2  (chosen from 2 candidates, pruned 11 values)
+[   99] ASSIGN    R6C2 = 4  (chosen from 2 candidates, pruned 6 values)
+[  100] ASSIGN    R6C1 = 7  (chosen from 2 candidates, pruned 16 values)
+[  101] BACKTRACK R6C1 = 7  (undo, try next value)
+[  102] ASSIGN    R6C1 = 9  (chosen from 2 candidates, pruned 14 values)
+[  103] BACKTRACK R6C1 = 9  (undo, try next value)
+[  104] BACKTRACK R6C2 = 4  (undo, try next value)
+[  105] ASSIGN    R6C2 = 8  (chosen from 2 candidates, pruned 8 values)
+[  106] BACKTRACK R6C2 = 8  (undo, try next value)
+[  107] BACKTRACK R6C5 = 2  (undo, try next value)
+[  108] ASSIGN    R6C5 = 8  (chosen from 2 candidates, pruned 24 values)
+[  109] BACKTRACK R6C5 = 8  (undo, try next value)
+[  110] BACKTRACK R3C9 = 3  (undo, try next value)
+[  111] BACKTRACK R6C9 = 6  (undo, try next value)
+[  112] BACKTRACK R1C9 = 7  (undo, try next value)
+[  113] BACKTRACK R2C9 = 5  (undo, try next value)
+[  114] ASSIGN    R2C9 = 7  (chosen from 2 candidates, pruned 2 values)
+[  115] ASSIGN    R4C3 = 2  (chosen from 2 candidates, pruned 27 values)
+[  116] ASSIGN    R1C3 = 4  (chosen from 1 candidate)
+[  117] ASSIGN    R6C3 = 7  (chosen from 1 candidate)
+[  118] ASSIGN    R5C3 = 9  (chosen from 1 candidate)
+[  119] ASSIGN    R1C2 = 1  (chosen from 2 candidates, pruned 19 values)
+
+Solution:
++-------+-------+-------+
+| 8 1 2 | 7 5 3 | 6 4 9 |
+| 9 4 3 | 6 8 2 | 1 7 5 |
+| 6 7 5 | 4 9 1 | 2 8 3 |
++-------+-------+-------+
+| 1 5 4 | 2 3 7 | 8 9 6 |
+| 3 6 9 | 8 4 5 | 7 2 1 |
+| 2 8 7 | 1 6 9 | 5 3 4 |
++-------+-------+-------+
+| 5 2 1 | 9 7 4 | 3 6 8 |
+| 4 3 8 | 5 2 6 | 9 1 7 |
+| 7 9 6 | 3 1 8 | 4 5 2 |
++-------+-------+-------+
+
+Status=solved nodes=3252 expanded=2318 backtracks=3192 checks=1072895 prunes=38918 max_depth=59 time=0.3129s

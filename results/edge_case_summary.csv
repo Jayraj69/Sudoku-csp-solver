@@ -1,0 +1,11 @@
+kind,algorithm,cases,correct,timeouts,mean_nodes
+invalid,BT,6,6,0,0.0
+invalid,BT+MRV,6,6,0,0.0
+invalid,BT+MRV+DEG,6,6,0,0.0
+invalid,FC,6,6,0,0.0
+invalid,MAC,6,6,0,0.0
+unsolvable,BT,7,1,6,713563.4285714285
+unsolvable,BT+MRV,7,7,0,0.0
+unsolvable,BT+MRV+DEG,7,7,0,0.0
+unsolvable,FC,7,7,0,0.0
+unsolvable,MAC,7,7,0,0.0

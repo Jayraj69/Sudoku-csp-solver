@@ -1,0 +1,33 @@
+{
+  "heuristics": {
+    "edges": 10751,
+    "hu_cons_viol": 0,
+    "h2_adm_viol": 10751,
+    "hs_cons_viol": 3030,
+    "hs_adm_viol": 0,
+    "max_hs_drop": 52,
+    "puzzles": 80,
+    "example_inconsistent_edge": {
+      "hs_before": 56,
+      "hs_after": 54,
+      "hu_before": 56,
+      "hu_after": 55,
+      "puzzle": "16.79...2.2.......7......3...63.7..5.7..2....9...6..8.....7....8952...7....8...14"
+    }
+  },
+  "ac3_soundness": {
+    "puzzles": 200,
+    "cells_checked": 16200,
+    "solution_values_removed": 0,
+    "total_values_pruned_by_preprocessing": 108443
+  },
+  "fc_vs_ac3": {
+    "trial_assignments": 11112,
+    "fc_accepts_mac_refutes": 2164,
+    "example": {
+      "puzzle": ".8..3.....3.6....72.64...........1...61...7.8.9..63..5.183.....6..5.4....7...9.2.",
+      "cell": "R1C1",
+      "value": 4
+    }
+  }
+}
